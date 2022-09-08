@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/globalUser.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <header>
+        <h1>SocialTech</h1>
+        <div>
+            <button id="btnLogout">Sair</button>
+        </div>
+    </header>
+    <main>
+        <section class="userSection" id="user">
+
+        </section>
+        
+        <section class="postSpace" id="newPost">
+            <input  type="text" id="titlePost" placeholder="Digitar título do post">
+            <textarea name="" id="descPost" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+            <button class="buttonsGeneralBlue" id="sendPost">Postar</button>
+        </section>
+        <div class="inverter">
+            <section class="postsSection" id="posts">
+                <h1>Posts</h1>
+                <ul id="listPosts">
+                <!--     <li id="unLiked">
+                        <div class="divUser">
+                            <img class="imageUser" src="https://scontent.fbel1-1.fna.fbcdn.net/v/t39.30808-6/275974460_10217512209597590_1548059285998793261_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=09cbfe&amp;_nc_eui2=AeGfA21XcElRZULh00RkDcgA1JT_9NklIqPUlP_02SUio3cyL3vsc7r1WF6M1IMo-jE&amp;_nc_ohc=GyJaStzyUjIAX_l208M&amp;_nc_ht=scontent.fbel1-1.fna&amp;oh=00_AT8kjJmnRH8X5wmpAsV00MWa971VnMpfVRpriHClUNnmvg&amp;oe=631A0786" alt="Image perfil">
+                            <h2 class="userName">Antonio</h2>
+                            <span class="workUser">dev</span>
+                        </div>
+                        <div class="divPost">
+                            <h2>Bora tentar d4 novo?</h2>
+                            <p>Vamos tentar fazer mais uma postagem aqui pelo Insomnia pra ver se dá certo esse negócio.</p>
+                        </div>
+                        <div class="divBtns">
+                            <button class="buttonsGeneralBlack" id="btnOpen">Abrir post</button>
+                            <button class="heartBtn" id="75d6b9c9-401c-48e6-9743-be721880e137"><img src="../assets/heartBlack.png">
+                            </button>
+                            <p>0</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </section>
+            <aside>
+                <h1>Sugestões para você</h1>
+                <ul id="listSuggests">
+      <!--               <li id="unFollow">
+                        <img class="imageUser" src="https://coppermind.net/w/images/thumb/Raoden.jpg/200px-Raoden.jpg" alt="Imagem perfil">
+                        <h2 class="userName">Raoden</h2>
+                        <span class="workUser">Desenvolvedor</span>
+                        <button class="buttonsGeneralWhite">Seguir</button>
+                    </li> -->
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="../scripts/indexDashboard.js"></script>
+    <script src="https://kit.fontawesome.com/6d5936e46f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

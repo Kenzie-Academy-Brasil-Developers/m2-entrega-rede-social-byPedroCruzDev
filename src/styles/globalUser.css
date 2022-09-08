@@ -1,0 +1,32 @@
+.workUser{
+    font-size: var(--text-2-size);
+    font-weight: var(--text-2-weight);
+    line-height: var(--text-2-heigth);
+
+    color: var(--grey-3);
+    
+}
+
+.userName{
+    font-size: var(--title-2-size);
+    font-weight: var(--title-2-weight);
+    line-height: var(--title-2-height);
+
+    color: var(--grey-1);
+
+    width: max-content;
+}
+
+.userFollowers{
+    font-size: var(--text-3-size);
+    font-weight: var(--text-3-weight);
+    line-height: var(--text-3-height);
+
+    color: var(--grey-3);
+}
+
+.imageUser{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+}
