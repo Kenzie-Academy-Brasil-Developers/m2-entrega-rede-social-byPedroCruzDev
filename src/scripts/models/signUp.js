@@ -1,16 +1,16 @@
 import { Api }  from "./API.js"
 class SignUp{
     static buttonsHeader(){
-        const btnLoginPage      = document.getElementById("btnLoginPage")
-        const btnRegisterPage   = document.getElementById("btnRegisterPage")
+        const login    = document.getElementById("login")
+        const signUp   = document.getElementById("signUp")
        
-        btnLoginPage.addEventListener("click", (event) =>{
+        login.addEventListener("click", (event) =>{
             event.preventDefault()
             window.location.assign("../../../index.html")
         })
-        btnRegisterPage.addEventListener("click", (event) =>{
+        signUp.addEventListener("click", (event) =>{
             event.preventDefault()
-            window.location.assign("../pages/signUpS.html")
+            window.location.assign("../pages/signUp.html")
         })
     }
     static createSignUp(){
@@ -50,5 +50,6 @@ class SignUp{
         })
     }
 }
-SignUp.createSignUp()
+
 SignUp.buttonsHeader()
+SignUp.createSignUp()
