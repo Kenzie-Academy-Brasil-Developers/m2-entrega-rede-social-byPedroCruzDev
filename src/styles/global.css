@@ -1,0 +1,116 @@
+/* text */
+:root{
+    --title-1-size: 28px;
+    --title-1-weight:700;
+    --title-1-height: 40px;
+
+    --title-2-size: 20px;
+    --title-2-weight:600;
+    --title-2-height: 24px;
+
+    --text-1-size: 16px;
+    --text-1-weight:400;
+    --text-1-height: 28px;
+
+    --text-2-size: 14px;
+    --text-2-weight:400;
+    --text-2-height: 19px;
+
+    --text-3-size: 12px;
+    --text-3-weight:400;
+    --text-3-height: 16px;
+
+}
+
+/* colors */
+:root{
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+
+    --grey-0: #0A0C0D;
+    --grey-1: #212529;
+    --grey-2: #495057;
+    --grey-3: #868E96;
+    --grey-4: #DEE2E6;
+    
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+
+    --white-fixed: #FFFFFF;
+
+    --like: #D7443E;
+}
+
+/* Buttons */
+:root{
+    --button-heigth: 35px;
+    --button-width:  600px;
+
+    --button-color-1: #4263EB;
+    --button-color-2: #FFFFFF;
+
+    --button-border: solid 1px black;
+}
+
+.buttonsGeneralBlue{
+    
+    height: var(--button-heigth);
+    
+    border: none;
+    border-radius: var(--border-radius);
+
+    font-size: var(--text-2-size);
+    font-weight: var(--text-2-weight);
+    line-height: var(--text-2-height);
+
+    background-color: var(--button-color-1);
+    color: var(--white-fixed);
+    cursor: pointer;
+}
+
+.buttonsGeneralWhite{
+    width: var(--input-size);
+    height: var(--button-heigth);
+    
+    border: none;
+    border-radius: var(--border-radius);
+
+    font-size: var(--text-2-size);
+    font-weight: var(--text-2-weight);
+    line-height: var(--text-2-height);
+
+    background-color: var(--grey-4);
+    color: var(--gray-0);
+
+    border: var(--button-border);
+    cursor: pointer;
+}
+/* inputs */
+:root{
+    --input-width: 600px;
+    --input-heigth: 40px;
+
+    --border-radius: 4px;
+
+    --outline-color: #4263EB;
+
+    --textarea-width: 600px;
+    --textarea-heigth: 130px;
+    --textarea-color:#495057;
+}   
+
+.inputsPage{
+    width: var(--input-size);
+    height: var(--input-heigth);
+
+    background-color: var(--grey-4);
+    color: var(--grey-2);
+
+    border-radius: var(--border-radius);
+    border: none;
+    
+    outline-color: var(--outline-color);
+
+    font-size: var(--text-1-size);
+    font-weight: 19px;
+    line-height: 100%;
+}
