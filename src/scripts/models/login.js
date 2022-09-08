@@ -2,8 +2,8 @@ import {Api} from "./API.js"
 export class Login {
     static buttonsHeader(){
         //header buttons
-        const btnLoginPage      = document.getElementById("btnLoginPage")
-        const btnRegisterPage   = document.getElementById("btnRegisterPage")
+        const btnLoginPage      = document.getElementById("login")
+        const btnRegisterPage   = document.getElementById("signUp")
         console.log(btnLoginPage, btnRegisterPage)
         btnLoginPage.addEventListener("click", (event) =>{
             event.preventDefault()
