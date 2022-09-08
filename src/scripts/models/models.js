@@ -1,4 +1,4 @@
-class Modal{
+export class Modal{
 
     static postModal(main){
         
@@ -48,4 +48,4 @@ class Modal{
         
     }
 }
-export default Modal 
+ 

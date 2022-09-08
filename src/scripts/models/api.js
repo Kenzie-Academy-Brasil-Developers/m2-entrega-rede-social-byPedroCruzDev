@@ -170,4 +170,3 @@ export class Api {
         .then(Api.suggestionUsers())
     }
 }
-export default Api 
