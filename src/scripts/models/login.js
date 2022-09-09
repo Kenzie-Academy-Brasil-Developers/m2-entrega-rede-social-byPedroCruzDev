@@ -1,4 +1,4 @@
-import {Api} from "./API.js"
+import {Api} from "./api.js"
 export class Login {
     static buttonsHeader(){
         //header buttons

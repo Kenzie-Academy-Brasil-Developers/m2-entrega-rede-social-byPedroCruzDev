@@ -1,6 +1,5 @@
-import Api from "./API.js"
-import request from "./API.js"
-import Modal from "./models.js"
+import {Api}from "./api.js"
+import {Modal} from "./models.js"
 export class Dashboard{
     static verificationToken(){
         if(!localStorage.KenzieToken){
@@ -145,7 +144,7 @@ export class Dashboard{
                 title: titlePost.value,
                 description: descPost.value
             }
-            request.createPost(body)
+            Api.createPost(body)
             
         })
         
