@@ -1,4 +1,4 @@
-import { Api }  from "./api"
+import { Api }  from "./api.js"
 class SignUp{
     static buttonsHeader(){
         const login    = document.getElementById("login")
