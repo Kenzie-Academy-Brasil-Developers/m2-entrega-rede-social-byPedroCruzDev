@@ -111,13 +111,13 @@ export class Dashboard{
                     heart.innerHTML = ""
                     heart.append(heartRed)
 
-                    request.likePost(postId) 
+                    Api.likePost(postId) 
                 }else {
 
                     heart.innerHTML = ""
                     heart.append(heartBlack)
 
-                    request.unlikePost(li.id)
+                    Api.unlikePost(li.id)
                     li.id = "unLiked"
                 }
                     
