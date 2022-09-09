@@ -1,4 +1,4 @@
-import {Dashboard} from "./dashboard.js"
+import { Dashboard } from "./dashboard.js"
 import { Error }from "./error.js"
 
 export class Api {
