@@ -37,7 +37,7 @@ export class Api {
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
-            window.location.assign("../../../index.html")
+            window.location.assign("../../index.html")
             return res
         })
         .catch((res) => console.log(res))
@@ -81,6 +81,7 @@ export class Api {
             })
             .then((res) => res.json())
             .then((res) => Dashboard.renderPosts(res.results))
+            .catch((err) => console.log(err))
         })
     }
 

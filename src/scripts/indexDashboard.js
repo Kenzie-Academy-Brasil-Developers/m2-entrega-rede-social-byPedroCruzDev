@@ -5,9 +5,11 @@ import { Error } from "./models/error.js"
 
 Error.toastError("Login realizado com sucésso!!")
 
+
+Dashboard.objPost()
 Dashboard.verificationToken()
 Dashboard.logout ()
-Dashboard.objPost()
+
 
 //
 Api.dataUser()

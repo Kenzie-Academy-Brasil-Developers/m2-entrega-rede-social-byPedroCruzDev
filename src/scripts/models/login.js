@@ -5,10 +5,7 @@ export class Login {
         const btnLoginPage      = document.getElementById("login")
         const btnRegisterPage   = document.getElementById("signUp")
         console.log(btnLoginPage, btnRegisterPage)
-        btnLoginPage.addEventListener("click", (event) =>{
-            event.preventDefault()
-            window.location.assign("../../../index.html")
-        })
+  
         btnRegisterPage.addEventListener("click", (event) =>{
             event.preventDefault()
             window.location.assign("./src/pages/signUp.html")
