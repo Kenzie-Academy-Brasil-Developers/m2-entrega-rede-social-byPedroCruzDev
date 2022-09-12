@@ -2,17 +2,18 @@ import { Api }  from "./api.js"
 class SignUp{
     static buttonsHeader(){
         const login    = document.getElementById("login")
-        const signUp   = document.getElementById("signUp")
+        const signUp   = document.getElementById("signup")  
        
         login.addEventListener("click", (event) =>{
             event.preventDefault()
-            window.location.assign("../../../index.html")
+            window.location.assign("../../index.html")
         })
         signUp.addEventListener("click", (event) =>{
             event.preventDefault()
             window.location.assign("../pages/signUp.html")
         })
     }
+
     static createSignUp(){
 
         
@@ -22,7 +23,7 @@ class SignUp{
         const inputWork     = document.getElementById("inputWork")
         const inputImg      = document.getElementById("inputImg")
         const btnRegister   = document.getElementById("btnRegister")
-        const btnPgLogin    = document.getElementById("btnPgLogin")
+        const btnPgLogin    = document.getElementById("btnLogin")
 
         btnRegister.addEventListener("click", (event) => {
             event.preventDefault()
@@ -46,10 +47,9 @@ class SignUp{
 
        btnPgLogin.addEventListener("click", (event) =>{
             event.preventDefault()
-            window.location.assign("../../../index.html")
+            window.location.assign("../../index.html")
         })
     }
 }
-
-SignUp.buttonsHeader()
 SignUp.createSignUp()
+SignUp.buttonsHeader()

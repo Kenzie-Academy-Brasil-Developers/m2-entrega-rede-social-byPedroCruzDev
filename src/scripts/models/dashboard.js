@@ -12,7 +12,7 @@ export class Dashboard{
         btnLogout.addEventListener("click", (event) =>{
             event.preventDefault()
             localStorage.clear()
-            window.location.assign("../../../index.html")
+            window.location.assign("../../index.html")
         })
     }
     static loggedUser(object){
@@ -35,6 +35,23 @@ export class Dashboard{
 
         secUser.append(userImg, userName, followers, work)
     }
+    static objPost(){
+        const titlePost   = document.getElementById("titlePost")
+        const descPost    = document.getElementById("descPost")
+        const btnSendPost = document.getElementById("sendPost")
+
+        btnSendPost.addEventListener("click", (event) => {
+            event.preventDefault()
+
+            const body ={
+                title: titlePost.value,
+                description: descPost.value
+            }
+            Api.createPost(body)
+            
+        })
+        
+    }
     static renderPosts(arr){
 
         const ulPosts = document.getElementById("listPosts")
@@ -42,7 +59,7 @@ export class Dashboard{
         arr.reverse() 
         
         arr.forEach((element) => {
-            const li = document.createElement("li")
+            const li        = document.createElement("li")
             const divUser   = document.createElement("div")
             const userImg   = document.createElement("img")
             const userName  = document.createElement("h2")
@@ -132,23 +149,7 @@ export class Dashboard{
             ulPosts.append(li)
         })
     }
-    static objPost(){
-        const titlePost   = document.getElementById("titlePost")
-        const descPost    = document.getElementById("descPost")
-        const btnSendPost = document.getElementById("sendPost")
-
-        btnSendPost.addEventListener("click", (event) => {
-            event.preventDefault()
-
-            const body ={
-                title: titlePost.value,
-                description: descPost.value
-            }
-            Api.createPost(body)
-            
-        })
-        
-    }
+    
     static userSuggests(arr){
         const ulSuggests = document.getElementById("listSuggests")
         console.log(arr)
